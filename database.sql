@@ -1,6 +1,6 @@
 -- Create database
-CREATE DATABASE IF NOT EXISTS demo;
-USE demo;
+CREATE DATABASE IF NOT EXISTS skill_test;
+USE skill_test;
 
 -- Create employees table
 CREATE TABLE IF NOT EXISTS employees (
