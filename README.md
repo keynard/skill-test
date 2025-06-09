@@ -48,3 +48,7 @@ A simple PHP CRUD (Create, Read, Update, Delete) application for managing employ
 - This application includes basic form validation.
 - All database operations use prepared statements to prevent SQL injection.
 - The application uses Bootstrap for styling. 
+
+
+download in cmcd folder
+npm i bootstrap@5.3.6
