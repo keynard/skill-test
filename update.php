@@ -74,8 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id"])) {
 <head>
     <meta charset="UTF-8">
     <title>Update Record</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>.wrapper{width:600px;margin:0 auto;}</style>
+    
 </head>
 <body>
 <div class="wrapper">
@@ -85,17 +84,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id"])) {
         <form action="" method="post">
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" name="name" class="form-control <?= $name_err ? 'is-invalid' : '' ?>" value="<?= htmlspecialchars($name) ?>">
+                <input type="text" name="name" class="<?= $name_err ? 'is-invalid' : '' ?>" value="<?= htmlspecialchars($name) ?>">
                 <span class="invalid-feedback"><?= $name_err ?></span>
             </div>
             <div class="form-group">
                 <label>Address</label>
-                <textarea name="address" class="form-control <?= $address_err ? 'is-invalid' : '' ?>"><?= htmlspecialchars($address) ?></textarea>
+                <textarea name="address" class="<?= $address_err ? 'is-invalid' : '' ?>"><?= htmlspecialchars($address) ?></textarea>
                 <span class="invalid-feedback"><?= $address_err ?></span>
             </div>
             <div class="form-group">
                 <label>Salary</label>
-                <input type="text" name="salary" class="form-control <?= $salary_err ? 'is-invalid' : '' ?>" value="<?= htmlspecialchars($salary) ?>">
+                <input type="text" name="salary" class="<?= $salary_err ? 'is-invalid' : '' ?>" value="<?= htmlspecialchars($salary) ?>">
                 <span class="invalid-feedback"><?= $salary_err ?></span>
             </div>
             <input type="hidden" name="id" value="<?= htmlspecialchars($id) ?>"/>

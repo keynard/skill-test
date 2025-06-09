@@ -22,11 +22,7 @@ if (isset($_GET["id"], $_GET["action"]) && $_GET["action"] === "delete") {
 <head>
     <meta charset="UTF-8">
     <title>Employee Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .wrapper { width: 800px; margin: 0 auto; }
-        table tr td:last-child { width: 120px; }
-    </style>
+    
 </head>
 <body>
 <div class="wrapper">
@@ -63,7 +59,7 @@ if (isset($_GET["id"], $_GET["action"]) && $_GET["action"] === "delete") {
         <?php
             mysqli_free_result($result);
         else:
-            echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
+            echo '<div class="alert-danger"><em>No records were found.</em></div>';
         endif;
         mysqli_close($conn);
         ?>
